@@ -1,0 +1,227 @@
+html,
+body {
+    height: 100%;
+	
+}
+
+h2 {
+	margin: 0px 0;
+	margin-bottom: 1em;
+}
+
+.shadowDown{
+     background: linear-gradient(to top, white, #d2d2d2) no-repeat;
+
+}
+
+.textCenter{
+	text-align: center;
+	}
+#log{
+	margin-top: 30px;
+	margin-left: 40px;
+	margin-bottom: 50px;
+}
+
+
+/* You can change the height of the carousel by changing the height in the class below. It is set to 50% by default, but can be any height! */
+
+.carousel {
+    height: 75%;
+}
+
+.item,
+.active,
+.carousel-inner {
+    height: 100%;
+}
+
+
+.style{
+	font-family: Gentium;
+	font-size: 14pt;
+  
+}
+
+.big{
+	font-size: 70px;
+	font-family: Gentium;
+}
+
+.mid{
+	font-size: 30px;
+	font-family: Gentium;
+
+}
+
+.small{
+	font-size: 20px;
+	font-family: Gentium;
+}
+
+.box{
+	white-space:nowrap;
+	}
+
+.box div{
+	display:inline-block;
+
+	}
+	
+.boxContCenter{
+	margin-left: 5%;
+}
+
+#cont{
+	float: right;
+    border: 1px solid black;
+	margin-top: 50px;
+	margin-right: 50px;
+	margin-bottom: 50px;
+
+}
+
+.logText{
+	font-size: 20pt;
+	font-weight: bolder;
+	color: #eeeeee;
+	transition: all 1s;
+	}
+	
+	  
+.logText:hover {
+    transition: all 1s;
+    color: crimson;
+    }
+
+
+	
+.styleh1{
+	font-size: 26pt;
+	font-weight: bolder;
+	font-family: Rurintania;
+	src: url("../fonts/Rurintania.ttf");
+}
+
+/* Background images are set within the HTML using inline CSS, not here */
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/*Filter styles*/
+	.saturate {-webkit-filter: saturate(3);-moz-filter: saturate(3); filter: saturate(3);} //Прописать для всех
+	.grayscale {-webkit-filter: grayscale(100%);}
+	.contrast {-webkit-filter: contrast(160%);}
+	.brightness {-webkit-filter: brightness(0.25);}
+	.blur {-webkit-filter: blur(3px);}
+	.invert {-webkit-filter: invert(100%);}
+	.sepia {-webkit-filter: sepia(100%);}
+	.huerotate {-webkit-filter: hue-rotate(180deg);}
+	.opacity {-webkit-filter: opacity(50%);}
+
+/*Buttons start*/
+.button {
+	margin: .3em;
+/*padding: 1em;*/
+	cursor: pointer;
+	background: none;
+	text-decoration: none;
+	color: #ffffff;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+}
+.grow {
+	display: inline-block;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.grow:hover, .grow:focus, .grow:active {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+/*Buttons end*/
+
+
+
+
+/*****NavBar******/
+
+
+.navbar {
+	font-weight: 800;
+	font-size: 13px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;	
+	
+
+
+}
+
+
+
+.navbar-inverse {
+	background: #2d2d2d;
+	border-color: #2d2d2d;
+}
+
+.navbar-inverse .navbar-nav > .active > a {
+	background: #ff7878;
+}
+
+.navbar-inverse .navbar-brand {
+	color: #999999;
+	font-weight: bolder;
+	font-size: 20px;
+	letter-spacing: 1px;
+
+
+}
+.nav.navbar-nav.main{
+	margin-top: 10px;
+	margin-left: 45px;
+	margin-right: 20px;
+}
+
+
+
+/*TILT*/
+.tilt {
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+ 
+.tilt:hover {
+  -webkit-transform: rotate(-10deg);
+     -moz-transform: rotate(-10deg);
+       -o-transform: rotate(-10deg);
+      -ms-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}
+
+
+
+/********NavBar End********/
+
+
+footer {
+    margin: 30px 0;
+	
+}
+
+

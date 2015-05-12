@@ -1,0 +1,71 @@
+doctype html
+html
+  head
+    title Alpha_Visit
+    for style in styles
+        link(rel='stylesheet', href='#{style}')
+    for script in scripts
+        script(src='#{script}')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='content-type', content='text/html; charset=utf-8')
+
+  body
+  
+    .header
+
+    .navbar.navbar-inverse.navbar-fixed-top
+      .container
+        .navbar-header
+
+          a#log(href='#')
+           img(height='60px', src='/img/logo/log3.jpg')
+        .navbar-collapse.collapse
+          ul.nav.navbar-nav.main.logText
+            li
+              p Укрась свою жизнь спортом!
+           ul.nav.navbar-nav.navbar-right
+
+            li.button.grow
+              a(href='/main') ГАВНАЯ
+            li.button.grow
+              a(href='/forma') ОФОРМИТЬ ЗАЯВКУ
+    header#myCarousel.carousel.slide
+
+
+      ol.carousel-indicators
+        li.active(data-target='#myCarousel', data-slide-to='0')
+        li(data-target='#myCarousel', data-slide-to='1')
+        li(data-target='#myCarousel', data-slide-to='2')
+
+      .carousel-inner
+        .item.active
+          .fill(style="background-image:url('img/slider/s3.jpg');")
+          .carousel-caption
+        .item
+          .fill(style="background-image:url('img/slider/s2.jpg');")
+          .carousel-caption
+        .item
+          .fill(style="background-image:url('img/slider/s1.jpg');")
+          .carousel-caption
+      a.left.carousel-control(href='#myCarousel', data-slide='prev')
+        span.icon-prev
+      a.right.carousel-control(href='#myCarousel', data-slide='next')
+        span.icon-next
+
+
+
+    // Page Content
+    block content
+
+
+
+    .container
+     hr
+     footer
+        .row
+          .col-lg-12
+            p Copyright © Your Website 2014
+    script.
+      $('.carousel').carousel({
+      interval: 5000 //changes the speed
+      })
