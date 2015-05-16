@@ -74,7 +74,20 @@ h2 {
 
 .construction{
 	background-image: url(../img/sorry/4.jpg);
-	height: 200px;
+	height: 300px;
+}
+
+.sl1{
+	background-image: url('../img/slider/s1.jpg'); 
+	background-size: cover;
+}
+.sl2{
+	background-image: url('../img/slider/s2.jpg');
+	background-size: cover;
+}
+.sl3{
+	background-image: url('../img/slider/s3.jpg'); 
+	background-size: cover;
 }
 
 #cont{
