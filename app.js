@@ -18,6 +18,8 @@ var users = require('./routes/user');
 
 var main = require('./routes/main');
 var forma = require('./routes/forma');
+var sorry = require('./routes/sorry');
+var gallery = require('./routes/gallery');
 
 
 
@@ -66,6 +68,8 @@ app.get('/users', users.list);
 
 app.get('/main', main.index);
 app.get('/forma', forma.index);
+app.get('/sorry', sorry.index);
+app.get('/gallery', gallery.index);
 
 
 app.get('/:id', routes.index);

@@ -72,6 +72,11 @@ h2 {
 	margin-left: 5%;
 }
 
+.construction{
+	background-image: url(../img/sorry/4.jpg);
+	height: 200px;
+}
+
 #cont{
 	float: right;
     border: 1px solid black;
