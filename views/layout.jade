@@ -10,15 +10,14 @@ html
     meta(http-equiv='content-type', content='text/html; charset=utf-8')
 
   body
-  
+
     .header
 
     .navbar.navbar-inverse.navbar-fixed-top
       .container
         .navbar-header
-
-          a#log(href='#')
-           img(height='60px', src='/img/logo/log3.jpg')
+          a.log(href='/main')
+            img(height='60px', src='/img/logo/log3.png')
         .navbar-collapse.collapse
           ul.nav.navbar-nav.main.logText
             li
@@ -28,17 +27,14 @@ html
             li.button.grow
               a(href='/main') ГЛАВНАЯ
             li.button.grow
-              a(href='/sorry') ГАЛЛЕРЕЯ
+              a(href='/sorry') ГАЛЕРЕЯ
             li.button.grow
               a(href='/sorry') ОФОРМИТЬ ЗАЯВКУ
     header#myCarousel.carousel.slide
-
-
       ol.carousel-indicators
         li.active(data-target='#myCarousel', data-slide-to='0')
         li(data-target='#myCarousel', data-slide-to='1')
         li(data-target='#myCarousel', data-slide-to='2')
-
       .carousel-inner
         .item.active
           .fill.sl1
@@ -54,9 +50,6 @@ html
       a.right.carousel-control(href='#myCarousel', data-slide='next')
         span.icon-next
 
-
-
-    // Page Content
     block content
 
 
