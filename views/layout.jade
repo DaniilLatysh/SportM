@@ -11,46 +11,71 @@ html
     meta(http-equiv='content-type', content='text/html; charset=utf-8')
 
   body
-
-    .header
-
-    .navbar.navbar-inverse.navbar-fixed-top
+    .navbar-wrapper
       .container
-        .navbar-header
-          a.log(href='/main')
-            img(height='60px', src='/img/logo/log3.png')
-        .navbar-collapse.collapse
-          ul.nav.navbar-nav.main.logText
-            li
-              p Укрась свою жизнь спортом!
-           ul.nav.navbar-nav.navbar-right
+        .navbar.navbar-inverse.navbar-static-top(role='navigation')
+          .container
+            .navbar-header
+              button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+                span.sr-only Toggle navigation
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
 
-            li.button.grow
-              a(href='/main') ГЛАВНАЯ
-            li.button.grow
-              a(href='/sorry') ГАЛЕРЕЯ
-            li.button.grow
-              a(href='/sorry') ОФОРМИТЬ ЗАЯВКУ
-    header#myCarousel.carousel.slide
+              a.navbar-brand(href='#')
+                img(height='40px', src='/img/logo/log3.png')
+              a.navbar-brand.logoText(href='#') SPORT HOUSE
+            .navbar-collapse.collapse.textMenu
+              ul.nav.navbar-nav
+                li
+                  a.grow.button(href='/main') Главная
+                li
+                  a.grow.button(href='/sorry') Галерея
+                li
+                  a.grow.button(href='/sorry') Контакты
+
+    #myCarousel.carousel.slide(data-ride='carousel')
+      // Indicators
       ol.carousel-indicators
         li.active(data-target='#myCarousel', data-slide-to='0')
         li(data-target='#myCarousel', data-slide-to='1')
         li(data-target='#myCarousel', data-slide-to='2')
       .carousel-inner
-        .item.active
-          .fill.sl1
-          .carousel-caption
-        .item
-          .fill.sl2
-          .carousel-caption
-        .item
-          .fill.sl3
-          .carousel-caption
+        .item.sl1
+          .container
+            .carousel-caption
+              h1 Команда профессионалов
+              br
+              p
+                | Наша команда активно занимается различными видами спорта, 
+                br
+                | что гарантирует Вам качественную помощь в выборе товара. 
+ 
+              p
+                a.btn.btn-lg.btn-primary(href='#', role='button') Посмотреть товар
+        .item.sl2
+          .container
+            .carousel-caption
+              h1 На низком старте
+              p
+                | Мы находимся в самом начале нашей карьеры, и по этому, все наши силы направленные на качественную и продуктивную работу.
+              p
+                a.btn.btn-lg.btn-primary(href='#', role='button') Связаться с нами
+        .item.sl3.active
+          .container
+            .carousel-caption
+              h1 Мы поможем вам стать лучше
+              br
+              p
+                b.styleSlider Знали ли Вы, что первые 10 минут собеседник смотрит на вашу внешность? 
+                br
+                | Занимаясь спортом, Вы повышаете свою работоспособность и привлекательность. 
+              p
+                a.btn.btn-lg.btn-primary(href='#', role='button') Browse gallery
       a.left.carousel-control(href='#myCarousel', data-slide='prev')
         span.icon-prev
       a.right.carousel-control(href='#myCarousel', data-slide='next')
         span.icon-next
-
     block content
 
 
@@ -60,8 +85,11 @@ html
      footer
         .row
           .col-lg-12
-            p Copyright © Sport House 2015
+            p © Sport House 2015
+          .col-lg-12
+            p.pull-right
+              a Back to top
     script.
       $('.carousel').carousel({
-      interval: 5000 //changes the speed
+      interval: 10000 
       })

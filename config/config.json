@@ -1,5 +1,5 @@
 {
-	"scripts":["/js/jquery.js", "/js/bootstrap.min.js", "/js/sendMail.js"],
+	"scripts":["/js/jquery.js", "/js/bootstrap.min.js", "/js/docs.js"],
 	"styles":["/stylesheets/style.css", "/stylesheets/bootstrap.min.css"],
 	"port":3000
 }
