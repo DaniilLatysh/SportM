@@ -20,6 +20,7 @@ var main = require('./routes/main');
 var forma = require('./routes/forma');
 var sorry = require('./routes/sorry');
 var gallery = require('./routes/gallery');
+var contacts = require('./routes/contacts');
 
 
 
@@ -70,6 +71,7 @@ app.get('/main', main.index);
 app.get('/forma', forma.index);
 app.get('/sorry', sorry.index);
 app.get('/gallery', gallery.index);
+app.get('/contacts', contacts.index);
 
 
 app.get('/:id', routes.index);

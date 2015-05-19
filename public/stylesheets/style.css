@@ -18,7 +18,7 @@ body {
   top: 0;
   right: 0;
   left: 0;
-  z-index: 1;
+  z-index: 200;
 }
 
 /* Flip around the padding for proper display in narrow viewports */
@@ -38,7 +38,7 @@ body {
 /* Carousel base class */
 .carousel {
   height: 500px;
-  margin-bottom: 60px;
+  margin-bottom: 0px;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -229,18 +229,26 @@ body {
 
 
 .logoText{
-	margin-top: -3px;
+	margin-top: 0px;
 	margin-bottom: 5px !important;
 
 
 }
 
 .logMag{
-	margin-top: -50px;
+	margin-top: -48px;
 	margin-left: 40px !important;
-	margin-bottom: 0px !important;
+	margin-bottom: -3px !important;
 	font-size: 12px !important;
 	font-weight: bolder;
+}
+
+.text{
+	font-size: 18px;
+
+}
+.textRight{
+	text-align: right
 }
 
 .boxContCenter{
@@ -261,6 +269,10 @@ body {
 
 }
 
+.firstContainer{
+	margin-top: 60px;
+}
+
 @media (min-width: 768px){
 .navbar-header {
 		float: left !important;
@@ -271,17 +283,19 @@ body {
 }
 
 
-/*
-@media screen and (max-width: 1200px){
-.logoTextCenter{
-	text-align: center !important;
-	display:none;
-	font-size: 20pt;
-	font-weight: bolder;
-	color: #eeeeee !important;
+
+@media(max-width: 1200px){
+.logMag{
+	display:none !important;
+}
+.logoText{
+	margin-top: 10px;
+}
+.dropScreen{
+	display:none !important;
 }
 }
-*/
+
 
 
 /***** Lily *****/
