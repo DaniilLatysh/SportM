@@ -163,7 +163,6 @@ body {
 
 
 
-
 .sl1{
 	background-image: url('../img/slider/s6.jpg'); 
 	background-position: 90% 60%;
@@ -209,8 +208,19 @@ body {
 	transform: scale(1.1);
 }
 
+/*Filter styles*/
+	.saturate {-webkit-filter: saturate(3);-moz-filter: saturate(3); filter: saturate(3);} //Прописать для всех
+	.grayscale {-webkit-filter: grayscale(100%);}
+	.contrast {-webkit-filter: contrast(160%);}
+	.brightness {-webkit-filter: brightness(0.25);}
+	.blur {-webkit-filter: blur(3px);}
+	.invert {-webkit-filter: invert(100%);}
+	.sepia {-webkit-filter: sepia(100%);}
+	.huerotate {-webkit-filter: hue-rotate(180deg);}
+	.opacity {-webkit-filter: opacity(50%);}
+
 .textMenu{
-	font-size: 18px;
+	font-size: 20px;
 	margin-top: 3px;
 	text-align: right; 
 
@@ -219,10 +229,18 @@ body {
 
 
 .logoText{
-	margin-top: 10px;
-	margin-right: 50px;
-	margin-left: 10px;
+	margin-top: -3px;
+	margin-bottom: 5px !important;
 
+
+}
+
+.logMag{
+	margin-top: -50px;
+	margin-left: 40px !important;
+	margin-bottom: 0px !important;
+	font-size: 12px !important;
+	font-weight: bolder;
 }
 
 .boxContCenter{
@@ -233,13 +251,101 @@ body {
 	text-align: center;
 }
 
+.textMagazin{
+	font-size: 35px;
+	text-align: center;
+}
+
+.shadowDown{
+     background: linear-gradient(to top, white, #d2d2d2) no-repeat;
+
+}
+
 @media (min-width: 768px){
-	.navbar-header {
+.navbar-header {
+		float: left !important;
+	}
+.navbarRight{
 		float: right !important;
 	}
 }
+
+
+/*
+@media screen and (max-width: 1200px){
+.logoTextCenter{
+	text-align: center !important;
+	display:none;
+	font-size: 20pt;
+	font-weight: bolder;
+	color: #eeeeee !important;
+}
+}
+*/
+
+
+/***** Lily *****/
+/*---------------*/
+
+figure.effect-lily img {
+	max-width: none;
+	width: -webkit-calc(100% + 50px);
+	width: calc(100% + 50px);
+	opacity: 0.7;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-40px,0, 0);
+	transform: translate3d(-40px,0,0);
 }
 
+figure.effect-lily figcaption {
+	text-align: left;
+}
 
+figure.effect-lily figcaption > div {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 2em;
+	width: 100%;
+	height: 50%;
+}
+
+figure.effect-lily h2,
+figure.effect-lily p {
+	-webkit-transform: translate3d(0,40px,0);
+	transform: translate3d(0,40px,0);
+}
+
+figure.effect-lily h2 {
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+}
+
+figure.effect-lily p {
+	color: rgba(255,255,255,0.8);
+	opacity: 0;
+	-webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
+	transition: opacity 0.2s, transform 0.35s;
+}
+
+figure.effect-lily:hover img,
+figure.effect-lily:hover p {
+	opacity: 1;
+}
+
+figure.effect-lily:hover img,
+figure.effect-lily:hover h2,
+figure.effect-lily:hover p {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-lily:hover p {
+	-webkit-transition-delay: 0.05s;
+	transition-delay: 0.05s;
+	-webkit-transition-duration: 0.35s;
+	transition-duration: 0.35s;
+}
 
 	/*	/	/	/	/	/	/	/	/	/	/	/	/	/	/ My Settings End/	/	/	/	/	/	/	/	/	/	/	/	/	*/
