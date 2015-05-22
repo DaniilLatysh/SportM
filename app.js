@@ -26,9 +26,7 @@ var contacts = require('./routes/contacts');
 
 var app = require('express')();
 var http = require('http').Server(app);
-setInterval(function() {
-    http.get("http:sporthouse.herokuapp.com");
-}, 300000);
+
 
 
 
